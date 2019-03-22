@@ -24,8 +24,8 @@ body {
     font-family: 'Roboto', sans-serif;
     color: white;
     background-color: black;
-    min-height: 90vh
-    position: fixed;
+    min-height: 90vh;
+    overflow: hidden;
 }
 
 
