@@ -2,7 +2,6 @@
     margin-top: 3em;
     margin-bottom: 7em;
     background-color: black;
-
 }
 
 .my-nav-item{
@@ -26,6 +25,7 @@ body {
     background-color: black;
     min-height: 90vh;
     overflow: hidden;
+    /*position: fixed;  */
 }
 
 
