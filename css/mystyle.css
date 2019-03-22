@@ -1,0 +1,54 @@
+.my-nav{
+    margin-top: 3em;
+    margin-bottom: 7em;  
+    background-color: black;
+
+}
+
+.my-nav-item{
+  margin-top: 3em;
+  margin: 3em;
+  text-decoration: none;  
+    color: white;
+}
+.my-nav-item:hover{
+    text-decoration: none;
+    color: white;
+}
+
+* {
+  margin: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: black;
+    min-height: 90vh
+}
+
+
+.my-name {
+    letter-spacing: 1em;
+}
+
+.my-desc {
+  margin-top: 3em;
+}
+
+.inverted {
+  background-color: white;
+}
+
+.my-bio {
+  letter-spacing: 1em;
+}
+
+.maximize {
+  height: 80vh;
+}
+
+.text-inverted {
+  color: black;
+
+}
