@@ -37,6 +37,11 @@ body {
   margin-top: 3em;
 }
 
+.my-more {
+  margin-top: 3em;
+  color: red;
+}
+
 .inverted {
   background-color: white;
 }
