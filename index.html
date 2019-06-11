@@ -13,14 +13,29 @@
 <body>
     <div class="container-fluid">
       <div class="container-fluid sticky-top my-nav">
-        <a class="my-nav-item" href="./index.html">Luca Amoriello</a>
-        <a class="my-nav-item" href="./index.html">About me</a>
-        <a class="my-nav-item" href="./index.html">My skills</a>
-        <a class="my-nav-item" href="./index.html">Projects</a>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="http://lucaamoriello.it">lucaamoriello</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">homepage<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=".#">projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">pic&video</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
       <div class="container-fluid maximize">
         <div class="container">
-          <div class="container">
+          <div class="container img-fluid">
             <div id="terminal" class="shell-body">
 
             </div>

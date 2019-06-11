@@ -61,7 +61,6 @@ $(function() {
     }, {
       prompt: 'user@lucaamoriello: ',
       greetings: "Welcome on lucaamoriello.it. Please, type [[b;red;]'help'] to get started!",
-      width: 700,
-      height: 250,
+      height: 300,
     });
 });
