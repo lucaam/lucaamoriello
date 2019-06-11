@@ -16,8 +16,6 @@ $(function() {
       },
       ls: function() {
         this.echo('curriculum_vitae.pdf');
-        this.echo('lucaamoriello.it_master.zip')
-        this.echo('amorebirra_master.zip')
         this.echo('focusit_master.zip')
       },
       youtube: function() {
