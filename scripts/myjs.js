@@ -12,36 +12,44 @@ $(function() {
         this.echo('telegram - contact me on telegram');
         this.echo('facebook - open my facebook profile');
         this.echo('send_email - email me');
-
+        this.echo('clear - clear console text');
       },
+
       ls: function() {
         this.echo('curriculum_vitae.pdf');
         this.echo('focusit_master.zip')
       },
+
       youtube: function() {
         this.echo('opening youtube channel...');
         window.open("https://www.youtube.com/channel/UCwWfPS3Z4QpfpSgAx_5CaUg");
       },
+
       twitter: function() {
         this.echo('opening twitter profile...');
         window.open("https://twitter.com/LucaAmoriello");
       },
+
       instagram: function() {
         this.echo('opening instagram page...');
         window.open("https://www.instagram.com/lucaamoriello/");
       },
+
       telegram: function() {
         this.echo('opening my chat...');
         window.open("https://t.me/lucaam");
       },
+
       facebook: function() {
         this.echo('opening youtube channel...');
         window.open("https://www.facebook.com/luca.amoriello");
       },
+
       send_email: function() {
-        this.echo('opening youtube channel...');
+        this.echo('opening your email client...');
         window.open("mailto:luca.amoriello@hotmail.it");
       },
+
       download: function(filename) {
         var done = 0;
         var filepath = "/download/";
