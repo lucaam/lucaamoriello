@@ -70,5 +70,6 @@ $(function() {
       prompt: 'user@lucaamoriello: ',
       greetings: "Welcome on lucaamoriello.it. Please, type [[b;red;]'help'] to get started!",
       height: 300,
+      completion: true,
     });
 });
