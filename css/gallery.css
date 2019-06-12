@@ -1,19 +1,22 @@
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
 .bg {
   /* The image used */
   /* background-image: url("./img1.jpg"); */
+  /* injected via javascript */
 
   /* Full height */
   height: 100%;
+  width: : 100%;
+
 
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  
+  top:0px; bottom: 0px;
+  position: absolute;
+  overflow-x: scroll;
 
       -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
          -moz-animation: fadein 2s; /* Firefox < 16 */
