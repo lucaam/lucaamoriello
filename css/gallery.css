@@ -18,6 +18,7 @@
   position: absolute;
   overflow-x: hidden;
 
+/* from here til the end this css is needed to fade in the page on load */
       -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
          -moz-animation: fadein 2s; /* Firefox < 16 */
           -ms-animation: fadein 2s; /* Internet Explorer */
