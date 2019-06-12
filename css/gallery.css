@@ -13,10 +13,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  
+
   top:0px; bottom: 0px;
   position: absolute;
-  overflow-x: scroll;
+  overflow-x: hidden;
 
       -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
          -moz-animation: fadein 2s; /* Firefox < 16 */
