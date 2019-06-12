@@ -17,16 +17,11 @@ a:hover {
 }
 
 * {
-  margin: 0px;
   font-family: monospace;
 }
 
 body {
     background-color: black;
-    min-height: 90vh;
-    /*position: fixed;  */
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
 }
 
 .shell-body {
@@ -35,25 +30,9 @@ body {
   border-color: white;
 }
 
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
+body, html {
+  height: 100%;
+  margin: 0;
 }
 
 
@@ -67,5 +46,4 @@ html {
 
 .my-text-grey {
   color: grey;
-
 }
