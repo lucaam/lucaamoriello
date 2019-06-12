@@ -45,15 +45,15 @@ $(function() {
   var files = ["curriculum_vitae.pdf",
                "focusit_master.zip"];
 
-  var commands = ["ls - show files available for download",
-                  "download - download a file (see files with ls)",
-                  'youtube - open my youtube channel',
-                  'twitter - open my twitter profile',
-                  'instagram - open my instagram profile',
-                  'telegram - contact me on telegram',
-                  'facebook - open my facebook profile',
-                  'send_email - email me',
-                  'clear - clear console text'];
+  var commands = ["ls            show files available for download",
+                  "download      download a file (see files with ls)",
+                  'youtube       open my youtube channel',
+                  'twitter       open my twitter profile',
+                  'instagram     open my instagram profile',
+                  'telegram      contact me on telegram',
+                  'facebook      open my facebook profile',
+                  'send_email    email me',
+                  'clear         clear console text'];
 
     $('#terminal').terminal({
       help: function() {
