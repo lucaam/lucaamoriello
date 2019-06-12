@@ -1,9 +1,19 @@
 .my-nav-item {
   margin-top: 3em;
   margin: 3em;
+  text-decoration: none;
 }
 .my-nav-item:hover {
     text-decoration: none;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 * {
@@ -48,4 +58,13 @@ html {
 
 .fa-light {
   color: grey;
+}
+
+.static-height{
+  min-height: 300px;
+}
+
+.my-text-grey {
+  color: grey;
+
 }
