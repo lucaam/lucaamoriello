@@ -13,7 +13,6 @@
 body {
     background-color: black;
     min-height: 90vh;
-    overflow: hidden;
     /*position: fixed;  */
     /* Margin bottom by footer height */
     margin-bottom: 60px;
@@ -39,10 +38,13 @@ body {
     position:absolute;
 }
 
+/* Sticky footer styles
+-------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
 }
+
 
 .fa-light {
   color: grey;
