@@ -11,7 +11,7 @@ jQuery.fn.loadRepositories = function(username) {
         console.log(repos.message);
         var list = $('<dl/>');
         target.empty().append(list);
-        if(repos.message.includes("API rate limit exceeded for")){
+        if(repos == null && repos.message.includes("API rate limit exceeded for")){
           $("#my-github-projects").append("<span class='my-text-grey'> API limit reached, please try later.</span>");
           return;
         }
