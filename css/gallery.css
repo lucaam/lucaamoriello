@@ -13,8 +13,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  top:0px; bottom: 0px;
-  position: absolute;
+
   overflow-x: hidden;
 
 /* from here til the end this css is needed to fade in the page on load */
