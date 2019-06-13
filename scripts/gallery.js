@@ -1,7 +1,7 @@
 
 $(document).ready( function() {
   var defaultPath = './images/';
-  var imgNumber = 15;
+  var imgNumber = 31;
   var defaultName = "img";
   var defaultExt = ".jpg";
   var i = 1;
