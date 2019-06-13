@@ -4,7 +4,7 @@ $(document).ready( function() {
   var imgNumber = 31;
   var defaultName = "img";
   var defaultExt = ".jpg";
-  var i = 1;
+  var i = 16;
 
   $('#heregoesthepic').attr("style", 'background-image: url("' + defaultPath + defaultName + i++ + defaultExt + '");');
 
@@ -20,7 +20,7 @@ $(document).ready( function() {
 
        if(i>=imgNumber)
        {
-         i = 1;
+         i = 16;
        }
        console.log('sono in next ed i = ' + i);
 
