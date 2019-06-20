@@ -47,3 +47,11 @@ body, html {
 .my-text-grey {
   color: grey;
 }
+
+embed{
+  height: 100%;
+  width: 100%;
+  border:none;
+  margin:0;
+  padding:0;
+}
