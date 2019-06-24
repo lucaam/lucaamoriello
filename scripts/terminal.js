@@ -158,7 +158,7 @@ $(function() {
     completion: true,
     onInit: function(term) {
       // first question
-      var msg = "Welcome to lucaamoriello.it! Type [[b;red;]'help'] to get started!";
+      var msg = "Have fun if you are an IT lover! Type [[b;red;]'help'] to get started!";
       typed_message(term, msg, 40, function() {
         typed_prompt(term, "user@lucaamoriello: ", 40);
       });
