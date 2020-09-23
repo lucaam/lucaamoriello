@@ -1,81 +1,64 @@
-.my-nav-item {
-  margin-top: 3em;
-  margin: 3em;
-  text-decoration: none;
-}
-.my-nav-item:hover {
-    text-decoration: none;
+body,
+html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
-a {
-  color: grey;
-  text-decoration: none;
+iframe {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
 }
-a:hover {
-    text-decoration: none;
+
+.header {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url('/images/bg.jpg');
+}
+
+.vertical-center {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+.inside-text-link {
     color: white;
+    mix-blend-mode: difference;
+    filter: grayscale();
 }
 
-* {
-  font-family: monospace;
+.cBox {
+    position: relative;
 }
 
-body {
-    background-color: black;
+.cText {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
-
-.shell-body {
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
-}
-
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
 
 .fa-light {
-  color: grey;
+    color: #212529;
 }
 
-.static-height{
-  min-height: 300px;
+.small-date {
+    font-size: 10px;
+    line-height: 1.5em;
+    word-spacing: 1px;
 }
 
-.my-text-grey {
-  color: grey;
-}
-
-iframe{
-  overflow: hidden;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  border:none;
-  margin:0;
-  padding:0;
-}
-
-html {
-    overflow: scroll;
-    overflow-x: hidden;
-}
-::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
-/* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-    background: #FF0000;
-}
-
-.title {
-  letter-spacing: 0.6em;
-  margin-bottom: 1em;
-}
-
-.pageborder {
-  margin-top: 10em;
+.skills-small {
+    font-size: 12px;
+    color: #888;
 }

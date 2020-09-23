@@ -1,84 +1,326 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-<!-- jquery terminal -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet"/>
-<link href="https://unpkg.com/jquery.terminal@1.x.x/css/jquery.terminal.min.css" rel="stylesheet"/>
-<!-- bootstrap -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-<!-- fontawesome -->
-<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><script src="https://kit.fontawesome.com/8bbee8cb1a.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- jquery terminal -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet" /> -->
+    <!-- <link href="https://unpkg.com/jquery.terminal@1.x.x/css/jquery.terminal.min.css" rel="stylesheet" /> -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-<!-- personal style -->
-<link rel="stylesheet" href="./css/mystyle.css">
-<meta charset="utf-8">
-<title>Official website - lucaamoriello.dev</title>
-<meta name="description" content="Luca Amoriello's official website. Read more about Luca Amoriello's skills and experiences. Download his curriculum, find social links and his creations.">
-<meta name="author" content="Luca Amoriello" />
-<meta name="keywords"  content="lucaamoriello,lucaamoriello.dev,luca amoriello,informatics,curriculum,github,codice,progetti,librerie,fotografia,video,nathalie,pictures,videos,lucaam,photography,photographer,gallery,cv,experience" />
-<!-- favicon for FF, Chrome, Opera -->
-<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
+    <!-- personal style -->
+    <link rel="stylesheet" href="./css/mystyle.css">
+    <link rel="stylesheet" href="./css/timeline.css">
 
-<!-- favicon for IE -->
-<link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico" >
-<link rel="shortcut icon" type="image/x-icon" href="/assets/favicons/favicon.ico"/>
+    <meta charset="utf-8">
+    <title>Official website - lucaamoriello.it</title>
+    <meta name="description" content="Luca Amoriello's official website. Read more about Luca Amoriello's skills and experiences. Download his curriculum, find social links and his creations.">
+    <meta name="author" content="Luca Amoriello" />
+    <meta name="keywords" content="lucaamoriello,lucaamoriello.it,luca amoriello,informatics,curriculum,github,codice,progetti,librerie,fotografia,video,nathalie,pictures,videos,lucaam,photography,photographer,gallery,cv,experience" />
+    <!-- favicon for FF, Chrome, Opera -->
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
+
+    <!-- favicon for IE -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicons/favicon.ico" />
 
 </head>
+
 <body>
-    <div class="container-fluid">
-      <div class="container-fluid my-nav" id="navbar">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="http://lucaamoriello.dev">lucaamoriello</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link my-nav-item" href="./index.html">homepage<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link my-nav-item" href="./github.html">github <small><span class="small text-danger"> beta</span></small></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link my-nav-item" href="./picvideo.html">pic&video <small><span class="small text-danger"> beta</span></small> </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <div class="container-fluid maximize mt-5">
-          <div class="container ">
-            <div id="terminal" class="shell-body static-height static-width">
-              <!--  needed for terminal -->
-            </div>
-            </div>
 
-     </div>
-     <div class="container-fluid maximize mt-5 text-center img-fluid">
-       <a href="https://t.me/lucaam"><i class="fab fa-2x fa-telegram-plane fa-light m-5"></i></a>
-       <a href="mailto:luca.amoriello@hotmail.it"><i class="fas fa-2x fa-envelope-open-text fa-light m-5"></i></a>
-       <a href="https://www.facebook.com/luca.amoriello"><i class="fab fa-2x fa-facebook-f fa-light m-5"></i></a>
-       <a href="https://www.youtube.com/channel/UCwWfPS3Z4QpfpSgAx_5CaUg"><i class="fab fa-2x fa-youtube fa-light m-5"></i></a>
-       <a href="https://twitter.com/LucaAmoriello"><i class="fab fa-2x fa-twitter fa-light m-5"></i></a>
-       <a href="http://github.com/lucaam?tab=repositories"><i class="fas fa-2x fa-code-branch fa-light m-5"></i></a>
-       <a href="https://www.instagram.com/lucaamoriello/"><i class="fab fa-2x fa-instagram fa-light m-5"></i></a>
-       <a href="https://www.linkedin.com/in/luca-amoriello-339125127/"><i class="fab fa-2x fa-linkedin-in fa-light m-5"></i></a>
-       <a href="/download/curriculum_vitae.pdf"><i class="fas fa-2x fa-file-download fa-light m-5"></i></a>
+    <div class="container-fluid header h-100 text-light vertical-center">
+        <div class="container">
+            <p class="text-left text-uppercase display-4">Luca Amoriello</p>
+            <p class="text-left lead">Studying Computer Science @ <a class="inside-text-link" href="https://www.unisa.it/">UNISA</a> + Working @ <a class="inside-text-link" href="https://www.ericsson.com/">Ericsson</a></p>
+            <p class="text-left lead">AI + home surveillance system</p>
+            <p class="text-left lead">Photography lover</p>
+        </div>
 
-     </div>
-   </div>
+    </div>
+    <div class="cBox mr-3">
+        <p class="cText small">~500 pics merged © 2020 - Luca Amoriello </p>
+    </div>
+
+    <section id="about-me">
+
+        <div class="container">
+
+            <!-- <div class="container maximize mt-5"> -->
+            <!-- <div class="container "> -->
+            <!-- <div id="terminal" class="shell-body static-height static-width"> -->
+            <!--  needed for terminal -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <p class="h1 mt-4 whoami d-none"><samp>root@lucaamoriello:~$ whoami</samp></p>
+            <p class="h1 mt-4 ">About me</p>
+            <p>Born in <a class="inside-text-link" href="https://en.wikipedia.org/wiki/Sant'Agata_de'_Goti">Sant'Agata de' Goti</a> <span class="age" id="age"></span> years ago. I am currently studying Computer Science at University of Salerno. I am working
+                fulltime at Ericsson Italy as Integration Engineer while finishing my last exams.</p>
+            <p>My evergreen hobbies are programming, diy, photography, travelling and cycling.</p>
+
+        </div>
+    </section>
+    <!-- <section id="pro-experience">
+        <div class="container">
+            <h2 class="h1 mt-4">Professional Experience</h2>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <ul class="timeline">
+                        <li>
+                            <span class="text-uppercase h5">Integration Engineer</span>
+                            <span class="float-right text-muted small">February, 2019 - Present</span>
+                            <p class="text-muted">Ericsson</p>
+                            <p class="text-justify">Ericsson Multi Activation to Ericsson Dynamic Activation migration for Spanish provider <a class="inside-text-link" href="https://www.yoigo.com/">Yoigo</a></p>
+                            <ul>
+                                <li>Integration testing</li>
+                                <li>Network Element integration</li>
+                                <li>Installation + rollback in test and live environment</li>
+                            </ul>
+                            <br>
+                            <p class="text-justify">Virtual EDA installation for English provider <a class="inside-text-link" href="https://www.inmarsat.com/">Inmarsat</a></p>
+                            <ul>
+                                <li>Openstack</li>
+                                <li>Network managment</li>
+                                <li>Linux administration</li>
+                            </ul>
+                            <br>
+                            <p class="text-justify">Applicaiton migrated from legacy JavaEE to Java8 for Italian provider <a class="inside-text-link" href="https://www.windtre.it/">Wind3</a></p>
+                            <ul>
+                                <li>SVN to Git migration</li>
+                                <li>Azure Cloud</li>
+                                <li>Bash</li>
+                                <li>Azure Active Directory integration</li>
+                                <li>JBoss to Wildfly migration</li>
+                                <li>Docker container and image managment</li>
+                                <li>DevOps</li>
+                            </ul>
+                            <br>
+                            <p class="text-justify">Own initiatives now used at Ericsson</p>
+                            <ul>
+                                <li>2/3 hours installation process automated with Ansible</li>
+                                <li>Testing process and report automated with self developed Java software</li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- <section id="other-experience">
+        <div class="container">
+            <h2 class="h1 mt-4">Personal Experience</h2>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <ul class="timeline">
+                        <li>
+                            <span class="text-uppercase h5">Surveillance system</span>
+                            <span class="float-right text-muted small">March, 2019 - April, 2019</span>
+                            <p class="text-muted">My friend</p>
+                            <p class="text-justify">Ericsson Multi Activation to Ericsson Dynamic Activation migration for Spanish provider <a class="inside-text-link" href="https://www.yoigo.com/">Yoigo</a></p>
+                            <ul>
+                                <li>Integration testing</li>
+                                <li>Network Element integration</li>
+                                <li>Installation + rollback in test and live environment</li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <span class="text-uppercase h5">Integration Engineer</span>
+                            <span class="float-right text-muted small">February, 2019 - Present</span>
+                            <p class="text-muted">Ericsson</p>
+                            <p class="text-justify">Ericsson Multi Activation to Ericsson Dynamic Activation migration for Spanish provider <a class="inside-text-link" href="https://www.yoigo.com/">Yoigo</a></p>
+                            <ul>
+                                <li>Integration testing</li>
+                                <li>Network Element integration</li>
+                                <li>Installation + rollback in test and live environment</li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <span class="text-uppercase h5">Integration Engineer</span>
+                            <span class="float-right text-muted small">February, 2019 - Present</span>
+                            <p class="text-muted">Ericsson</p>
+                            <p class="text-justify">Ericsson Multi Activation to Ericsson Dynamic Activation migration for Spanish provider <a class="inside-text-link" href="https://www.yoigo.com/">Yoigo</a></p>
+                            <ul>
+                                <li>Integration testing</li>
+                                <li>Network Element integration</li>
+                                <li>Installation + rollback in test and live environment</li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="pro-experience">
+        <div class="container">
+            <h2 class="h1 mt-4">Professional Experience</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-block timeline-block-right">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="text-uppercase">Integration Engineer</h3>
+
+                        <span>Ericsson </span>
+                        <div class="text-right float-right small-date mt-2">February, 2019 - Present</div>
+                        <p class="text-justify">I started my experience with the installation of a vEDA (Virtual Ericsson Dynamic Activation) for English provider <a class="inside-text-link" href="https://www.inmarsat.com/">Inmarsat</a>. What I improved thanks to this activity
+                            is my knowledge on Openstack, Linux administration and networking stuff.</p>
+
+                        <p class="text-justify">Ericsson Multi Activation to Ericsson Dynamic Activation migration for Spanish provider <a class="inside-text-link" href="https://www.yoigo.com/">Yoigo</a>. Main points I had to do were integration testing, customer adaptation
+                            installation and rollout and rollback activies in live environments.</p>
+
+
+                        <p class="text-justify">Applicaiton migrated from legacy JavaEE to Java8 for Italian provider <a class="inside-text-link" href="https://www.windtre.it/">Wind3</a>. During this activity I had to move an application from JBoss to Wildfly, use newer Java
+                            version integrating Maven to this project for these reason I decided to migrate SVN repository to Git repository and started to use Gitlab with its CI/CD tools. This migration lit in me, the desire of initiate a DevOps flow
+                            to improve testing and deployment in production. Everything was moved to Azure Cloud, integrating Azure AD to authenticate users, and I setup a Docker container to host the webapp. Today the deployment in live environment can
+                            be done in one click.</p>
+
+                        <!-- <p>Skills:</p>
+                        <ul class="skills-small list-inline">
+
+                            <li class="list-inline-item">SVN to Git migration - </li>
+                            <li class="list-inline-item">Azure Cloud - </li>
+                            <li class="list-inline-item">Bash - </li>
+                            <li class="list-inline-item">Azure AD integration - </li>
+                            <li class="list-inline-item">JBoss to Wildfly migration - </li>
+                            <li class="list-inline-item">Docker container and image - </li>
+                            <li class="list-inline-item">DevOps</li>
+                        </ul> -->
+                        <!-- <div class="span-small">SVN to Git migration - Azure Cloud Bash Azure Active Directory integration JBoss to Wildfly migration Docker container and image managment DevOps</div> -->
+
+                        <p class="text-justify">There are also some initiative that my colleagues and I initiated. Those are related to testing automation and installation process automation. The first one is done developing a Java software that uses SoapUI open source library,
+                            the second one is done using Ansible to automate a 2 hours installation process done during night activities. Both are now part of Ericsson and used by Ericsson and some customers.</p>
+
+                    </div>
+                </div>
+
+                <div class="timeline-block timeline-block-left">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="text-uppercase">Startup Weekend Caserta</h3>
+                        <span>Google for Entrepreneurs</span>
+                        <div class="text-right float-right small-date mt-2">May, 2018 - May, 2018</div>
+
+                        <p>Startup Weekend is a 54-hour weekeend event during which groups of people, expert in different areas, create a demo or a presentation for their project. This experience really helped me understanding what are the basis to work
+                            in team to reach a common goal, ranging over different thematic.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="h1 mt-4">Personal Experience</h2>
+
+            <div class="timeline">
+                <div class="timeline-block timeline-block-right">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="text-uppercase">Taboo</h3>
+                        <span>Personal project during quaratine</span>
+                        <div class="text-right float-right small-date mt-2">May, 2018 - May, 2018</div>
+
+                        <p>During Christmas holidays my firends and I used to play Taboo a lot. During COVID-19 quarantine I started to think a way to play and spent times from remote with my firends. That's why I started to design and develop, in a very
+                            short time, a web application that was reproducing Taboo game. I decided to develop it with SpringBoot, using websockets, MySQL as database and a bit of HTLM, CSS (Bulma Framework) for the frontend.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-block timeline-block-left">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="text-uppercase">Surveillance system</h3>
+                        <span>Friend house</span>
+                        <div class="text-right float-right small-date mt-2">May, 2018 - May, 2018</div>
+                        <p class="text-justify">I setup a 4 cameras surveillance system for a friend. It records 24h/24h and stores 2 months of recording. A Raspberry was used to duplicate screen where live view of cameras is available. To do that I wrote a simple HTML page
+                            using VLC plugin to run rstp streams. The Raspberry has autostart system and a basic auto healing system.</p>
+                    </div>
+                </div>
+                <div class="timeline-block timeline-block-right">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="text-uppercase">Clickeat</h3>
+                        <span>University of Salerno</span>
+                        <div class="text-right float-right small-date mt-2">May, 2018 - May, 2018</div>
+
+                        <p>Restaurant managment software with my collegues @ UNISA</p>
+                    </div>
+                </div>
+                <div class="timeline-block timeline-block-left">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="text-uppercase">Focusit</h3>
+                        <span>University of Salerno</span>
+                        <div class="text-right float-right small-date mt-2">May, 2018 - May, 2018</div>
+
+                        <p>Small e-commerce website deployed with Java EE using the MVC pattern linked to MySQL as database to store persistent data. Servlet, JavaBean, JSP, Session and cookies were used to manage the backend, alongside MySQL maangement.
+                            HTML, CSS, Bootstrap, Javascript, Ajax, jQuery were used for the frontend.</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container  icons">
+        <div class="row">
+            <div class="col-md-1 offset-md-1">
+                <a href="https://t.me/lucaam"><i class="fab fa-2x fa-telegram-plane fa-light m-5"></i></a>
+            </div>
+            <div class="col-md-1">
+                <a href="mailto:luca.amoriello@hotmail.it"><i class="fas fa-2x fa-envelope-open-text fa-light m-5"></i></a>
+            </div>
+            <div class="col-md-1">
+                <a href="https://facebook.com/luca.amoriello"><i class="fab fa-2x fa-facebook-f fa-light m-5"></i></a>
+            </div>
+            <div class="col-md-1">
+                <a href="https://youtube.com/channel/UCwWfPS3Z4QpfpSgAx_5CaUg"><i class="fab fa-2x fa-youtube fa-light m-5"></i></a>
+            </div>
+            <div class="col-md-1">
+                <a href="https://twitter.com/LucaAmoriello"><i class="fab fa-2x fa-twitter fa-light m-5"></i></a>
+            </div>
+            <div class="col-md-1">
+                <a href="http://github.com/lucaam"><i class="fas fa-2x fa-code-branch fa-light m-5"></i></a>
+            </div>
+            <div class="col-md-1">
+                <a href="https://instagram.com/lucaamoriello/"><i class="fab fa-2x fa-instagram fa-light m-5"></i></a>
+            </div>
+            <div class="col-md-1">
+                <a href="https://linkedin.com/in/luca-amoriello-339125127/"><i class="fab fa-2x fa-linkedin-in fa-light m-5"></i></a>
+            </div>
+            <div class="col-md-1">
+                <a href="/download/curriculum_vitae.pdf"><i class="fas fa-2x fa-file-download fa-light m-5"></i></a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/jquery.terminal@1.x.x/js/jquery.terminal.min.js"></script>
+    <!-- <script src="https://unpkg.com/jquery.terminal@1.x.x/js/jquery.terminal.min.js"></script> -->
 
-    <script src="./scripts/terminal.js"></script>
+    <!-- <script src="./scripts/terminal.js"></script> -->
+    <script src="./scripts/utility.js"></script>
 
 
 </body>
+
 </html>
