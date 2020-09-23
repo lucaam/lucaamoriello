@@ -56,7 +56,7 @@ h1 span {
 
 .timeline-block-left {
     float: left;
-    direction: ltr
+    direction: ltr;
 }
 
 .marker {
@@ -73,6 +73,10 @@ h1 span {
     width: 95%;
     padding: 0 15px;
     color: #666
+}
+
+.timeline-block-left .timeline-content {
+    text-align: right;
 }
 
 .timeline-content h3 {
@@ -94,15 +98,8 @@ h1 span {
     color: #888;
 }
 
-.timeline-content ul li {
-    font-size: 14px;
-    line-height: 1.5em;
-    word-spacing: 1px;
-    color: #888;
-}
-
 @media screen and (max-width: 768px) {
-    .timeline:before {
+    .container:before {
         left: 8px;
         width: 2px;
     }
@@ -115,6 +112,13 @@ h1 span {
     }
     .timeline-block-left {
         float: none;
-        direction: rtl;
+        direction: ltr;
+    }
+    .timeline-block-left .timeline-content {
+        text-align: left;
+        order: 2;
+    }
+    .timeline-block-left .marker {
+        order: 1;
     }
 }
