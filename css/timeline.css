@@ -16,7 +16,7 @@ h1 span {
 }
 
 .timeline {
-    width: 80%;
+    width: 100%;
     padding: 50px 0;
     margin: 50px auto;
     position: relative;
@@ -98,7 +98,7 @@ h1 span {
     color: #888;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     .container:before {
         left: 8px;
         width: 2px;
@@ -120,5 +120,52 @@ h1 span {
     }
     .timeline-block-left .marker {
         order: 1;
+    }
+    .timeline:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 2%;
+        margin-left: -1px;
+        width: 2px;
+        height: 100%;
+        background: #CCD1D9;
+        z-index: 1
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container:before {
+        left: 8px;
+        width: 2px;
+    }
+    .timeline-block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .timeline-block-right {
+        float: none;
+    }
+    .timeline-block-left {
+        float: none;
+        direction: ltr;
+    }
+    .timeline-block-left .timeline-content {
+        text-align: left;
+        order: 2;
+    }
+    .timeline-block-left .marker {
+        order: 1;
+    }
+    .timeline:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 3%;
+        margin-left: -1px;
+        width: 2px;
+        height: 100%;
+        background: #CCD1D9;
+        z-index: 1
     }
 }
