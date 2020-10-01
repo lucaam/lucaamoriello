@@ -2,15 +2,13 @@
     new InstagramFeed({
         'username': 'lucaamoriello',
         'callback': function(data) {
-            console.log(data)
             carousel = document.getElementById("fillimages");
             carousel_indicator = document.getElementById("carousel-ind");
             i = 0
             $(data.edge_owner_to_timeline_media.edges).each(function() {
 
-                console.log(this.node.display_url)
-                    // <div class="carousel-item active">
-                    //                 <img src="./images/img1.jpg" class="img-fluid" alt="Responsive image">
+                // <div class="carousel-item active">
+                //                 <img src="./images/img1.jpg" class="img-fluid" alt="Responsive image">
 
                 //             </div>
 

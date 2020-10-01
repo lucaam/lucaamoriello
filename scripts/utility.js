@@ -59,6 +59,9 @@ $("#buttonProExperience").click(function() {
     $("#pro-experience").removeClass("d-none")
     $("#buttonExperience").removeClass("disable-pointer")
     $("#buttonProExperience").addClass("disable-pointer")
+    $("#buttonProExperience").addClass("opacity-15")
+    $("#buttonExperience").removeClass("opacity-15")
+
 
 });
 $("#buttonExperience").click(function() {
@@ -66,6 +69,7 @@ $("#buttonExperience").click(function() {
     $("#experience").removeClass("d-none")
     $("#buttonProExperience").removeClass("disable-pointer")
     $("#buttonExperience").addClass("disable-pointer")
-
+    $("#buttonExperience").addClass("opacity-15")
+    $("#buttonProExperience").removeClass("opacity-15")
 
 });

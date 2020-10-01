@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 body,
 html {
     height: 100%;
@@ -5,6 +6,7 @@ html {
     margin: 0;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-family: 'Raleway';
 }
 
 iframe {
@@ -35,7 +37,11 @@ iframe {
 }
 
 .inside-text-link {
-    color: black;
+    cursor: unset;
+}
+
+.opacity-15 {
+    opacity: 15%;
 }
 
 .inside-text-link:hover {
@@ -89,5 +95,4 @@ iframe {
 .disable-pointer {
     pointer-events: none;
     color: #3c4b64;
-    text-decoration: underline;
 }
