@@ -146,6 +146,3 @@ $.fn.loadRepositories = function(username) {
 $(function() {
     $("#repo-container").loadRepositories("lucaam");
 });
-
-
-≈
