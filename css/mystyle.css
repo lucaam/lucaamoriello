@@ -35,9 +35,13 @@ iframe {
 }
 
 .inside-text-link {
-    color: white;
-    mix-blend-mode: difference;
-    filter: grayscale();
+    color: black;
+}
+
+.inside-text-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: darkgrey;
 }
 
 .cBox {
@@ -80,4 +84,10 @@ iframe {
     height: calc(60vh);
     /* Make the background image cover the area of the <div>, and clip the excess */
     background-size: cover;
+}
+
+.disable-pointer {
+    pointer-events: none;
+    color: #3c4b64;
+    text-decoration: underline;
 }

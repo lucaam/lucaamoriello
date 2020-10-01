@@ -52,3 +52,20 @@ document.querySelectorAll('a').forEach(link => {
         }, 100);
     });
 });
+
+
+$("#buttonProExperience").click(function() {
+    $("#experience").addClass("d-none")
+    $("#pro-experience").removeClass("d-none")
+    $("#buttonExperience").removeClass("disable-pointer")
+    $("#buttonProExperience").addClass("disable-pointer")
+
+});
+$("#buttonExperience").click(function() {
+    $("#pro-experience").addClass("d-none")
+    $("#experience").removeClass("d-none")
+    $("#buttonProExperience").removeClass("disable-pointer")
+    $("#buttonExperience").addClass("disable-pointer")
+
+
+});
