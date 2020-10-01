@@ -1,8 +1,10 @@
 body,
 html {
     height: 100%;
+    width: 100%;
     margin: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 iframe {
@@ -65,4 +67,17 @@ iframe {
 
 .letter-spacing-1 {
     letter-spacing: 10px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.crop {
+    background-position: center;
+    height: calc(60vh);
+    /* Make the background image cover the area of the <div>, and clip the excess */
+    background-size: cover;
 }
