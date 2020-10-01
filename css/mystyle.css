@@ -1,81 +1,98 @@
-.my-nav-item {
-  margin-top: 3em;
-  margin: 3em;
-  text-decoration: none;
-}
-.my-nav-item:hover {
-    text-decoration: none;
-}
-
-a {
-  color: grey;
-  text-decoration: none;
-}
-a:hover {
-    text-decoration: none;
-    color: white;
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Raleway';
 }
 
-* {
-  font-family: monospace;
+iframe {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    background-color: black;
+.header {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url('/images/bg.jpg');
 }
 
-.shell-body {
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
+.vertical-center {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
 }
 
-body, html {
-  height: 100%;
-  margin: 0;
+.inside-text-link {
+    cursor: unset;
 }
 
+.opacity-15 {
+    opacity: 15%;
+}
+
+.inside-text-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: darkgrey;
+}
+
+.cBox {
+    position: relative;
+}
+
+.cText {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 .fa-light {
-  color: grey;
+    color: #212529;
 }
 
-.static-height{
-  min-height: 300px;
+.small-date {
+    font-size: 10px;
+    line-height: 1.5em;
+    word-spacing: 1px;
 }
 
-.my-text-grey {
-  color: grey;
+.skills-small {
+    font-size: 12px;
+    color: #888;
 }
 
-iframe{
-  overflow: hidden;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  border:none;
-  margin:0;
-  padding:0;
+.letter-spacing-1 {
+    letter-spacing: 10px;
 }
 
-html {
-    overflow: scroll;
-    overflow-x: hidden;
-}
-::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
-/* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-    background: #FF0000;
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.title {
-  letter-spacing: 0.6em;
-  margin-bottom: 1em;
+.crop {
+    background-position: center;
+    height: calc(60vh);
+    /* Make the background image cover the area of the <div>, and clip the excess */
+    background-size: cover;
 }
 
-.pageborder {
-  margin-top: 10em;
+.disable-pointer {
+    pointer-events: none;
+    color: #3c4b64;
 }
