@@ -105,6 +105,8 @@ $.fn.loadRepositories = function(username) {
                     // linkRepo.classList.add("btn")
                     // linkRepo.classList.add("btn-secondary")
                 linkRepo.classList.add("class-link")
+                linkRepo.classList.add("inside-text-link")
+
                 linkRepo.append(document.createTextNode("Repository"))
 
 
@@ -119,6 +121,8 @@ $.fn.loadRepositories = function(username) {
                         // linkRepo.classList.add("btn")
                         // linkRepo.classList.add("btn-secondary")
                     homeRepo.classList.add("class-link")
+                    homeRepo.classList.add("inside-text-link")
+
                     homeRepo.classList.add("ml-2")
                     homeRepo.append(document.createTextNode("Homepage"))
                     cardBody.append(homeRepo)
