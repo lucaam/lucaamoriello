@@ -96,3 +96,36 @@ iframe {
     pointer-events: none;
     color: #3c4b64;
 }
+
+/* Social Buttons */
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1);}
+
+.fa-telegram-plane:hover{
+    color: #0088cc;
+}
+.fa-envelope-open-text:hover{
+    color:#ea4335;
+}
+.fa-facebook-f:hover{
+    color:#3b5998;
+}
+.fa-youtube:hover{
+    color:#ff0000;
+}
+.fa-twitter:hover{
+    color:#1da1f2;
+}
+.fa-code-branch:hover{
+    color:#657786;
+}
+.fa-instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.fa-linkedin-in:hover{
+    color:#0077b5;
+}
+.fa-file-download:hover{
+    color:#e68523;
+}
+/* Social Buttons */
