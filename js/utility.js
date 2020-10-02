@@ -54,22 +54,63 @@ document.querySelectorAll('a').forEach(link => {
 });
 
 
-$("#buttonProExperience").click(function() {
+$("#buttonProExperience").on("click", function() {
     $("#experience").addClass("d-none")
     $("#pro-experience").removeClass("d-none")
-    $("#buttonExperience").removeClass("disable-pointer")
-    $("#buttonProExperience").addClass("disable-pointer")
-    $("#buttonProExperience").addClass("opacity-15")
-    $("#buttonExperience").removeClass("opacity-15")
+
+    $("#buttonProExperience").removeClass("title-tab")
+    $("#buttonProExperience").addClass("title-tab-active")
+
+    $("#buttonExperience").addClass("title-tab")
+    $("#buttonExperience").removeClass("title-tab-active")
+    $("#refreshExp").attr("showing", "pro")
+    $("#refreshExp").prop('checked', false)
+
+
 
 
 });
-$("#buttonExperience").click(function() {
+$("#buttonExperience").on("click", function() {
     $("#pro-experience").addClass("d-none")
     $("#experience").removeClass("d-none")
-    $("#buttonProExperience").removeClass("disable-pointer")
-    $("#buttonExperience").addClass("disable-pointer")
-    $("#buttonExperience").addClass("opacity-15")
-    $("#buttonProExperience").removeClass("opacity-15")
+    $("#buttonExperience").removeClass("title-tab")
+    $("#buttonExperience").addClass("title-tab-active")
+
+    $("#buttonProExperience").addClass("title-tab")
+    $("#buttonProExperience").removeClass("title-tab-active")
+    $("#refreshExp").attr("showing", "personal")
+    $("#refreshExp").prop('checked', true)
+
+
+});
+
+
+$("#refreshExp").on("change", function() {
+    if (this.getAttribute("showing") == "pro") {
+        $("#pro-experience").addClass("d-none")
+        $("#experience").removeClass("d-none")
+
+        $("#buttonExperience").removeClass("title-tab")
+        $("#buttonExperience").addClass("title-tab-active")
+        $("#buttonProExperience").addClass("title-tab")
+        $("#buttonProExperience").removeClass("title-tab-active")
+
+
+        $("#refreshExp").attr("showing", "personal")
+        console.log(this)
+
+    } else {
+        $("#pro-experience").removeClass("d-none")
+        $("#experience").addClass("d-none")
+
+        $("#buttonProExperience").removeClass("title-tab")
+        $("#buttonProExperience").addClass("title-tab-active")
+        $("#buttonExperience").addClass("title-tab")
+        $("#buttonExperience").removeClass("title-tab-active")
+
+        $("#refreshExp").attr("showing", "pro")
+        console.log(this)
+    }
+
 
 });
