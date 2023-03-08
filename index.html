@@ -40,9 +40,9 @@
             <p class="text-left text-uppercase display-4 letter-spacing-1 nav-link">Luca Amoriello</p>
             <p class="text-left lead nav-link">Studying Computer Science @ <a class="header-text-link"
                     href="https://www.unisa.it/">UNISA</a> + Working @ <a class="header-text-link"
-                    href="https://www.ericsson.com/">Ericsson</a></p>
-            <p class="text-left lead nav-link">Actually learning Django + improving CI/CD knowledge</p>
-            <p class="text-left lead nav-link">Photography lover</p>
+                    href="https://www.luxoft.com/">Luxoft Italy</a></p>
+            <p class="text-left lead nav-link">Actually learning Traefik + improving CI/CD knowledge</p>
+            <p class="text-left lead nav-link">Photography lover - 45.0677551, 7.6824892</p>
 
             <div class="invisible" id="navbar-container">
 
@@ -65,8 +65,8 @@
 
     </div>
     <div class="cBox mr-3">
-        <p class="cText small header-text-link">Pics are low quality in favour of high speed - Luca Amoriello &copy;
-            2021</p>
+        <p id="download-image-link" class="cText small header-text-link">Download image - Luca Amoriello &copy;
+            <span class="year" id="year-header"></span></p>
     </div>
 
     <div class="pt-5">
@@ -78,8 +78,8 @@
                 <p>Born in <a class="custom-link" href="https://en.wikipedia.org/wiki/Sant'Agata_de'_Goti">Sant'Agata
                         de' Goti</a> <span class="age" id="age"></span> years ago. I am currently studying Computer
                     Science at University of Salerno. I am working
-                    fulltime at Ericsson Italy as Integration Engineer while finishing my last exams.</p>
-                <p>My evergreen hobbies are programming, diy, photography, travelling and cycling.</p>
+                    fulltime at Luxoft Italy as Release Manager / DevOps Engineer while finishing my last exams.</p>
+                <p>My evergreen hobbies are programming, diy, photography, travelling and (newcomer) swimming.</p>
             </div>
         </section>
         <div class="container" id="exp">
@@ -104,13 +104,34 @@
 
                 <div class="timeline">
 
+                    <div class="timeline-block timeline-block-left">
+                        <div class="timeline-content">
+                            <h3 class="text-uppercase">Release Manager / CI Integrator</h3>
+                            <span>Release Manager - CI Integrator - DevOps Engineer</span>
+                            <br>
+                            <span>Luxoft</span>
+
+                            <div class="text-right small-date mb-4">October, 2022 - Present</div>
+
+                            <p class="text-justify">
+                                I am currently working as DevOps Engineer on pipelines with Zuul, Github and (developing with) Ansible (mainly). 
+                                In addition, I am learning how the delivery process works.</p>
+                        </div>
+                        <div class="marker"></div>
+
+                    </div>
+                    
                     <div class="timeline-block timeline-block-right">
                         <div class="marker"></div>
                         <div class="timeline-content">
-                            <h3 class="text-uppercase">Integration Engineer</h3>
-
+                            <h3 class="text-uppercase">Software Developer</h3>
+                            <span>Solution Architect - Software Developer - Integration Engineer - Tester</span>
+                            <br>
                             <span>Ericsson </span>
-                            <div class="text-left small-date mb-4">February, 2019 - Present</div>
+                            <div class="text-left small-date mb-4">February, 2019 - October, 2022</div>
+                            <p class="text-justify fw-semibold">I really enjoyed Ericsson even if I left the company.
+                                One month after I left, I would have received my promotion to Solution Architect.</p>
+
                             <p class="text-justify">Setup vEDA (Virtual Ericsson Dynamic Activation) for English
                                 provider <a class="custom-link" href="https://www.inmarsat.com/">Inmarsat</a>. I
                                 improved, thanks to this activity, my knowledge of Openstack, Linux administration
@@ -355,7 +376,7 @@
     <footer class="c-footer container">
         <div>
             <span>Luca Amoriello</span>
-            <span>&copy; 2021.</span>
+            <span>&copy; <span class="year" id="year-footer"></span>.</span>
         </div>
         <div class="ml-auto">
             <span>Made with</span>
@@ -366,7 +387,7 @@
 
 
 
-    <script src="./js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./js/jquery/jquery-3.6.4.min.js"></script>
     <script src="./js/coreui/coreui.bundle.min.js"></script>
     <!-- <script src="./js/instafeed.min.js"></script> -->
     <script src="./js/utility.min.js"></script>
